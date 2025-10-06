@@ -1,0 +1,109 @@
+/* ===== NTR page ===== */
+
+/* Conteneur de la fiche */
+.NTR-card {
+  max-width: 1700px;
+  margin-inline: auto;
+  background: var(--clr-surface-trans);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  padding: clamp(1rem, 3vw, 2rem);
+  box-shadow: var(--shadow-sm);
+  text-align: center; /* <-- tout centré */
+}
+
+/* Titres en Audiowide */
+.NTR-card h2 {
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 0.75rem;
+}
+
+/* Texte */
+.NTR-card p {
+  margin: 0.5rem 0 1rem 0;
+  color: var(--clr-muted);
+}
+
+/* Images centrées */
+.NTR-card img {
+  display: block;
+  margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  max-width: 720px; /* limite la largeur */
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Bouton de download */
+.NTR-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--clr-accent);
+  background: var(--clr-accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease,
+    border-color 0.2s ease;
+}
+.NTR-card a:hover {
+  background: color-mix(in oklab, var(--clr-accent) 88%, black);
+  border-color: color-mix(in oklab, var(--clr-accent) 88%, black);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+.NTR-card a:active {
+  transform: translateY(0);
+}
+
+.NTR-container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3vw, 2rem);
+}
+/* Galerie côte à côte, contenue et centrée */
+.ntr-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 auto 1.25rem;
+  align-items: start;
+}
+
+/* Figures + légendes */
+.ntr-gallery figure {
+  margin: 0;
+}
+.ntr-gallery figcaption {
+  margin-top: 0.5rem;
+  color: var(--clr-muted);
+  font-size: 0.95rem;
+}
+
+/* Images : pleine largeur de leur colonne, pas de marge auto qui recentre */
+.ntr-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Supprime les contraintes/marges appliquées aux <img> génériques de la card */
+.NTR-card img {
+  max-width: none;
+  margin: 0;
+}
+
+/* Mobile : pile en une colonne */
+@media (max-width: 900px) {
+  .ntr-gallery {
+    grid-template-columns: 1fr;
+  }
+}

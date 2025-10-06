@@ -1,0 +1,16 @@
+# Empêche l’indexation du répertoire
+Options -Indexes
+
+<FilesMatch "^(ntr-download|ntr-count)\.php$">
+  Require all granted
+</FilesMatch>
+
+# Autorise aussi les fichiers JS nécessaires (lecture par script.php)
+<FilesMatch "^(camera|space)\.js$">
+  Require all granted
+</FilesMatch>
+
+# Autorise éventuellement les fichiers CSS si tu en as ici
+<FilesMatch "\.css$">
+  Require all granted
+</FilesMatch>

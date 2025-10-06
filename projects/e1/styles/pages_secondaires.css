@@ -1,0 +1,151 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/image_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 27, 27, 0.425);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.video-container {
+  text-align: center;
+}
+iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  aspect-ratio: 16/9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  border: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  aspect-ratio: 16/9;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.code-wrapper {
+  font-size: 0.8rem;
+  background-color: rgba(10, 10, 10, 0.719);
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.code-wrapper pre {
+  color: #0ff;
+  font-family: "Orbitron", monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 0.5rem;
+}
+
+.code-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #03dede;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.site-container {
+  color: #03dede;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid #03dede;
+  border-radius: 8px;
+  background-color: rgba(30, 30, 30, 0.8);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  max-width: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.keyword {
+  color: #ff00ff;
+} /* Mots-clés */
+.function {
+  color: #00ffff;
+} /* Fonctions */
+.string {
+  color: #ffcc00;
+} /* Chaînes de caractères */
+.comment {
+  color: #888888;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .pfp {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}

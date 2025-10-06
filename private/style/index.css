@@ -1,0 +1,132 @@
+.cinematic .panel.is-visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+/* ===== Panels (cinématique) ===== */
+.cinematic .panel {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100dvh;
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.96) translateY(10px);
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+
+.cinematic .panel .container {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: clamp(1rem, 3vw, 1.6rem);
+}
+
+/* ===== Work (mode scrollytelling slide) ===== */
+.cinematic .work__grid {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  perspective: 3000px; /* profondeur 3D */
+  transform-style: preserve-3d;
+}
+.cinematic .work__grid .work-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  border-radius: var(--radius);
+  line-height: 0;
+}
+
+.cinematic .work__grid .work-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.cinematic .work__grid .work-card__body {
+  padding: 1.5rem;
+  background-color: var(--clr-surface);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+.cinematic .work__grid .work-card h3 {
+  color: var(--clr-accent);
+  margin-bottom: 0.4rem;
+}
+.cinematic .work__grid .work-card p {
+  color: var(--clr-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ==== Panels: camera‑driven visibility ==== */
+.cinematic .panel {
+  opacity: 0;
+  transform: scale(0.96) translateY(10px);
+  pointer-events: none;
+}
+.cinematic .panel.is-visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+.cinematic .panel.panel--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .cinematic .panel,
+  .cinematic .panel.is-visible {
+    transition: none;
+  }
+}
+
+/* ==== Buttons spacing on panels ==== */
+#panel-hero .btn-group,
+#panel-all .btn-group,
+#panel-about .btn-group,
+#panel-contact .btn-group {
+  margin-top: 0.8rem;
+}
+
+/* ==== Work grid starts hidden until camera hits milestone ==== */
+#panel-last .work__grid .work-card {
+  opacity: 0;
+}
+#panel-last.is-visible .work__grid .work-card {
+  opacity: 1;
+}
+/* Le canvas Three doit être derrière */
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    1200px 800px at 70% 20%,
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.48)
+  );
+}

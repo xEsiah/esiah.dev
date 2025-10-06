@@ -1,0 +1,463 @@
+/* =========================
+   Base & reset
+   ========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+  background-color: #101820;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e5f9ff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(16, 24, 32, 0.4);
+  z-index: -1; /* voile léger derrière le contenu */
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Orbitron", sans-serif;
+}
+
+.margin_body_sauf_headerfooter {
+  margin: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 100vh;
+  text-align: center;
+}
+
+/* =========================
+   Titres & textes
+   ========================= */
+h2,
+.Administrationh3 {
+  color: #e5f9ff;
+  text-shadow: 0 0 10px #00f0ff;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: 3rem;
+  padding-bottom: 25px;
+}
+
+.Administrationh3 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00eeffad;
+}
+
+p,
+.infos {
+  font-size: 1.5rem;
+  color: #e5f9ff;
+  text-shadow: 0 0 10px #1e90ff;
+  margin: 0.5rem 0;
+}
+
+.infos {
+  color: #1e90ff;
+  text-shadow: 0 0 4px #5affff;
+  font-weight: normal;
+  margin-right: 20px;
+}
+
+/* =========================
+   Header & navigation
+   ========================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 2px solid #1f2f45;
+  box-shadow: 0 0 20px #00f0ff;
+  background-color: rgba(31, 47, 69, 0.9);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  text-shadow: 0 0 12px #00f0ff;
+  margin: 0.5rem 0;
+}
+
+header p {
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #00f0ff;
+  margin: 0.5rem 0;
+}
+
+/* Nav : 2 lignes, le bouton prend la 1re */
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+header nav a {
+  color: #00c0d6;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-shadow: 0 0 8px #5affff;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: #00f0ff;
+}
+
+/* Bouton "to esiah.dev" — pastille claire, au-dessus des autres */
+header nav a.btn-home {
+  order: -1; /* passe en premier */
+  flex: 0 0 100%; /* occupe la 1re ligne */
+  max-width: 420px; /* limite visuelle */
+  text-align: center;
+  margin: 0 0 6px 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e5f9ff; /* même blanc que le thème */
+  color: #101820 !important; /* contraste */
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(229, 249, 255, 0.65);
+  box-shadow: 0 2px 12px rgba(0, 240, 255, 0.25),
+    0 0 0 2px rgba(16, 24, 32, 0.35) inset;
+
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-decoration: none !important;
+  text-shadow: none;
+  line-height: 1;
+  transition: transform 0.18s ease, box-shadow 0.22s ease, filter 0.22s ease,
+    background 0.22s ease;
+}
+
+header nav a.btn-home:hover {
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 240, 255, 0.35),
+    0 0 0 2px rgba(16, 24, 32, 0.25) inset;
+  transform: translateY(-2px);
+  filter: saturate(1.02);
+}
+
+header nav a.btn-home:focus-visible {
+  outline: 3px solid #60eaff;
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  padding: 1.5rem;
+  background-color: rgba(31, 47, 69, 0.9);
+  box-shadow: 0 0 20px #00f0ff;
+  border-radius: 10px;
+  margin-top: 50px;
+  text-align: center;
+  color: #e5f9ff;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #00c0d6;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 8px #5affff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #00f0ff;
+}
+
+/* =========================
+   Bouton retour index (ancienne classe)
+   ========================= */
+.centrer_retour_index {
+  color: #03dede;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid #00c0d6;
+  border-radius: 8px;
+  background-color: rgba(31, 47, 69, 0.9);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: flex;
+  max-width: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.centrer_retour_index:hover {
+  color: #1e1e1e;
+  background-color: #00c0d6;
+  border-color: #1e1e1e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   Posts
+   ========================= */
+.post-preview,
+.post-list {
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: rgba(31, 47, 69, 0.637);
+  box-shadow: 0 0 10px #00f0ff;
+  border-radius: 10px;
+}
+
+.post-preview {
+  border-bottom: 1px solid #ccccccc2;
+  box-shadow: 0 0 20px #00f0ff;
+}
+
+.post-preview:hover,
+.post-list:hover {
+  color: #1e1e1e;
+  background-color: rgba(31, 47, 69, 0.9);
+  border-color: #1e1e1e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.877);
+}
+
+.post-preview h3 a {
+  font-size: larger;
+  text-decoration: none;
+  color: #1e90ff;
+  transition: color 0.3s;
+}
+
+.post-preview h3 a:hover {
+  color: #60c5ff;
+}
+
+.post-preview a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0077cc;
+}
+
+.post-preview a:hover {
+  color: #005299;
+}
+
+/* =========================
+   Formulaires
+   ========================= */
+input[type="text"],
+input[type="password"],
+input,
+textarea,
+button,
+select {
+  padding: 10px;
+  border: 2px solid #00c0d6;
+  border-radius: 8px;
+  background-color: rgba(31, 47, 69, 0.9);
+  color: #e5f9ff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+input:hover,
+button:hover {
+  border-color: #1e1e1e;
+  background-color: #00c0d6;
+  color: #1e1e1e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.877);
+}
+
+label {
+  font-size: 1.5rem;
+  color: #e5f9ff;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+/* =========================
+   Édition (mise en page)
+   ========================= */
+.editing {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.editing input[type="text"],
+.editing button {
+  width: 80%;
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #00c0d6;
+  background-color: rgba(31, 47, 69, 0.9);
+  color: #e5f9ff;
+}
+
+.editing button {
+  background-color: #00c0d6;
+  color: #1e1e1e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.editing button:hover {
+  background-color: #00f0ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+.editing textarea {
+  flex: 2;
+  resize: vertical;
+  min-height: 100%;
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #00c0d6;
+  background-color: rgba(31, 47, 69, 0.9);
+  color: #e5f9ff;
+}
+
+/* =========================
+   Divers
+   ========================= */
+.success {
+  color: green;
+  font-weight: bold;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.request-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: rgba(31, 47, 69, 0.637);
+  box-shadow: 0 0 10px #00f0ff;
+  border-radius: 10px;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  header nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  .post-preview,
+  .post-list,
+  .request-container {
+    padding: 0.8em;
+  }
+
+  .centrer_retour_index,
+  #centrer_retour_index {
+    max-width: 80%;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input,
+  textarea,
+  button,
+  select {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+  .Administrationh3 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+
+  /* le bouton passe déjà en 1re ligne grâce à order:-1 ;
+     en mobile on garde la largeur auto (ligne dédiée) */
+  header nav a.btn-home {
+    width: 100%;
+    margin: 10px 0 16px 0;
+  }
+}
