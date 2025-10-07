@@ -14,10 +14,10 @@
     <!-- Liens -->
     <nav id="site-links" class="links" role="navigation">
       <a href="/">Home</a>
-      <a href="/about.php">About</a>
-      <a href="/blog/public/index.php">Blog</a>
-      <a href="/projects.php">Projects</a>
-      <a href="/contact.php">Contact</a>
+      <a href="/about/">About</a>
+      <a href="/blog/public/index/">Blog</a>
+      <a href="/projects/">Projects</a>
+      <a href="/contact/">Contact</a>
     </nav>
   </div>
 </header>
