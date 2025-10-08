@@ -2,13 +2,13 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Numerique - Hackathon Arduino</title>
-  <link rel="icon" href="/projects/e1/images/icon.png" alt="Icone site Portfolio" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/projects/e1/styles/index.css" />
-  <link rel="stylesheet" href="/projects/e1/styles/pages_secondaires.css" />
+  <link rel="icon" href="/projects/e1/images/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/projects/e1/styles/index.css">
+  <link rel="stylesheet" href="/projects/e1/styles/pages_secondaires.css">
 </head>
 
 
@@ -23,10 +23,10 @@
   <div class="margin_body">
     <div class="video-container">
       <h2>Panneau conneccté</h2>
-      <img src="/projects/e1/images/prototype3D.gif" alt="Prototype 3D du panneau connecté" />
-      <iframe src="/projects/e1/videos/Hackathon Arduino.mp4" title="Présentation Hackathon Arduino"
+      <img src="/projects/e1/images/prototype3D.gif" alt="Prototype 3D du panneau connecté">
+      <video src="/projects/e1/videos/Hackathon Arduino.mp4" title="Présentation Hackathon Arduino"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        allowfullscreen></video>
     </div>
     <div class="code-container">
       <div class="code-wrapper">
@@ -217,7 +217,7 @@
       <h3 class="h3revert">Site internet du projet</h3>
       <a href="https://hackathon2siteweb.vercel.app/" target="_blank">
         <img src="/projects/e1/images/previewSiteHackathonIoT.png"
-          alt="ACCUEIL PROJET ZONES À RISQUE - Site de sensibilisation à la sécurité en forêt" />
+          alt="ACCUEIL PROJET ZONES À RISQUE - Site de sensibilisation à la sécurité en forêt">
       </a>
     </div>
     <a id="centrer_retour_index" href="/projects/e1">Retour au portfolio</a>
@@ -227,17 +227,17 @@
     <h2>Contact</h2>
     <div class="icons_liens">
       <div class="social-icons" style="display: flex; gap: 15px">
-        <a href="mailto:esiah.dev@gmail.com?subject=Demande d'information&body=Bonjour Théo," class="liens_footer"
-          target="_blank">
-          <img src="/projects/e1/images/icon_mail.png" alt="Mail" class="icon" />
+        <a href="mailto:esiah.dev@gmail.com?subject=Demande%20d%27information&body=Bonjour%20Th%C3%A9o,"
+          class="liens_footer" target="_blank">
+          Contactez-moi
         </a>
 
         <a href="https://github.com/xEsiah" class="liens_footer" target="_blank">
-          <img src="/projects/e1/images/icon_github.png" alt="GitHub" class="icon" />
+          <img src="/projects/e1/images/icon_github.png" alt="GitHub" class="icon">
         </a>
 
         <a href="https://www.linkedin.com/in/xesiah/" class="liens_footer" target="_blank">
-          <img src="/projects/e1/images/icon_linkedin.png" alt="LinkedIn" class="icon" />
+          <img src="/projects/e1/images/icon_linkedin.png" alt="LinkedIn" class="icon">
         </a>
       </div>
     </div>

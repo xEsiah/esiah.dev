@@ -38,7 +38,7 @@ body::after {
 .video-container {
   text-align: center;
 }
-iframe {
+video {
   border: none;
   display: block;
   width: 100%;
@@ -145,7 +145,7 @@ h3 {
     font-size: 2rem;
   }
 
-  iframe {
+  video {
     width: 100%;
   }
 }

@@ -2,14 +2,14 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Numérique</title>
-  <link rel="icon" href="images/icon.png" alt="Icone site portfolio numérique" />
+  <link rel="icon" href="images/icon.png">
   <script src="hoverJS.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
       <a href="/projects/" class="back-btn">Back to projects list</a>
       <h1>DUPRE THEO</h1>
       <p id="honorific_title">Explorateur Numérique</p>
-      <img class="pfp" src="images/dupre_theo.jpg" alt="Photo de profil" />
+      <img class="pfp" src="images/dupre_theo.jpg" alt="Photo de profil">
     </div>
   </header>
   <div class="margin_body">
@@ -37,8 +37,8 @@
             </p>
           </div>
           <div class="project-icons">
-            <img src="images/icon_html.png" alt="icon_html" />
-            <img src="images/icon_css.png" alt="icon_css" />
+            <img src="images/icon_html.png" alt="icon_html">
+            <img src="images/icon_css.png" alt="icon_css">
           </div>
         </a>
         <a href="portfolio-wordpress/" class="project-card">
@@ -47,8 +47,8 @@
             <p>Un Portfolio conçu avec Wordpress hébergé localement.</p>
           </div>
           <div class="project-icons">
-            <img src="images/icon_wordpress.png" alt="icon_wordpress" />
-            <img src="images/icon_wamp.png" alt="icon_wamp" />
+            <img src="images/icon_wordpress.png" alt="icon_wordpress">
+            <img src="images/icon_wamp.png" alt="icon_wamp">
           </div>
         </a>
         <a href="hackathon-wordpress/" class="project-card">
@@ -57,8 +57,8 @@
             <p>Un site vitrine conçu avec Wordpress hébergé localement.</p>
           </div>
           <div class="project-icons">
-            <img src="images/icon_wordpress.png" alt="icon_wordpress" />
-            <img src="images/icon_wamp.png" alt="icon_wamp" />
+            <img src="images/icon_wordpress.png" alt="icon_wordpress">
+            <img src="images/icon_wamp.png" alt="icon_wamp">
           </div>
         </a>
         <a href="https://github.com/xEsiah/Labyrinthe" class="project-card" target="_blank">
@@ -70,8 +70,8 @@
             </p>
           </div>
           <div class="project-icons">
-            <img src="images/icon_python.png" alt="icon_python" />
-            <img src="images/icon_github.png" alt="icon_github" />
+            <img src="images/icon_python.png" alt="icon_python">
+            <img src="images/icon_github.png" alt="icon_github">
           </div>
         </a>
         <a href="hackathon-arduino/" class="project-card">
@@ -84,8 +84,8 @@
             </p>
           </div>
           <div class="project-icons">
-            <img src="images/icon_arduino.png" alt="icon_arduino" />
-            <img src="images/icon_c++.png" alt="icon_c++" />
+            <img src="images/icon_arduino.png" alt="icon_arduino">
+            <img src="images/icon_c++.png" alt="icon_c++">
           </div>
         </a>
         <a href="https://projet-php-blog.onrender.com" class="project-card" target="_blank">
@@ -94,8 +94,8 @@
             <p>Un blog conçu avec PHP et hébergé sur Render.</p>
           </div>
           <div class="project-icons">
-            <img src="images/icon_php.png" alt="icon_php" />
-            <img src="images/icon_render.png" alt="icon_render" />
+            <img src="images/icon_php.png" alt="icon_php">
+            <img src="images/icon_render.png" alt="icon_render">
           </div>
         </a>
         <a href="https://metzcampus.fr" class="project-card" target="_blank">
@@ -106,8 +106,8 @@
             </p>
           </div>
           <div class="project-icons">
-            <img src="images/icon_hostinger.png" alt="icon_hostinger" />
-            <img src="images/icon_wordpress.png" alt="icon_wordpress" />
+            <img src="images/icon_hostinger.png" alt="icon_hostinger">
+            <img src="images/icon_wordpress.png" alt="icon_wordpress">
           </div>
         </a>
       </div>
@@ -117,7 +117,7 @@
     <h2>Mes Compétences</h2>
     <section id="skills">
       <ul>
-        <li>HTML / CSS 🎨</li>
+        <li>HTML CSS 🎨</li>
         <li id="JS" onmouseover="showSmiley()" onmouseout="resetText()">
           JavaScript ⚡
         </li>
@@ -126,8 +126,8 @@
 
         <!-- Langages de programmation -->
         <li>Python 🐍</li>
-        <li>C / C++ 🖥️</li>
-        <li>C# / Unity 🎮</li>
+        <li>C C++ 🖥️</li>
+        <li>C# Unity 🎮</li>
         <li>Arduino ⚙️</li>
 
         <!-- Bases de données -->
@@ -144,17 +144,17 @@
     <h2>Contact</h2>
     <div class="icons_liens">
       <div class="social-icons" style="display: flex; gap: 15px">
-        <a href="mailto:esiah.dev@gmail.com?subject=Demande d'information&body=Bonjour Théo," class="liens_footer"
-          target="_blank">
-          <img src="images/icon_mail.png" alt="Mail" class="icon" />
+        <a href="mailto:esiah.dev@gmail.com?subject=Demande%20d%27information&body=Bonjour%20Th%C3%A9o,"
+          class="liens_footer" target="_blank">
+          Contactez-moi
         </a>
 
         <a href="https://github.com/xEsiah" class="liens_footer" target="_blank">
-          <img src="images/icon_github.png" alt="GitHub" class="icon" />
+          <img src="images/icon_github.png" alt="GitHub" class="icon">
         </a>
 
         <a href="https://www.linkedin.com/in/xesiah/" class="liens_footer" target="_blank">
-          <img src="images/icon_linkedin.png" alt="LinkedIn" class="icon" />
+          <img src="images/icon_linkedin.png" alt="LinkedIn" class="icon">
         </a>
       </div>
     </div>

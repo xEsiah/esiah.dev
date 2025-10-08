@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Numerique - Portfolio Wordpress</title>
-  <link rel="icon" href="/projects/e1/images/icon.png" alt="Icone site Portfolio" />
+  <link rel="icon" href="/projects/e1/images/icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/projects/e1/styles/index.css" />
   <link rel="stylesheet" href="/projects/e1/styles/pages_secondaires.css" />
@@ -22,9 +22,9 @@
   <div class="margin_body">
     <div class="video-container">
       <h2>Portfolio Wordpress</h2>
-      <iframe src="/projects/e1/videos/Portfolio Wordpress.mp4" title="Présentation Portfolio Wordpress"
+      <video src="/projects/e1/videos/Portfolio Wordpress.mp4" title="Présentation Portfolio Wordpress"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        allowfullscreen></video>
     </div>
     <a id="centrer_retour_index" href="/projects/e1">Retour au portfolio</a>
   </div>
@@ -32,9 +32,9 @@
     <h2>Contact</h2>
     <div class="icons_liens">
       <div class="social-icons" style="display: flex; gap: 15px">
-        <a href="mailto:esiah.dev@gmail.com?subject=Demande d'information&body=Bonjour Théo," class="liens_footer"
-          target="_blank">
-          <img src="/projects/e1/images/icon_mail.png" alt="Mail" class="icon" />
+        <a href="mailto:esiah.dev@gmail.com?subject=Demande%20d%27information&body=Bonjour%20Th%C3%A9o,"
+          class="liens_footer" target="_blank">
+          Contactez-moi
         </a>
 
         <a href="https://github.com/xEsiah" class="liens_footer" target="_blank">

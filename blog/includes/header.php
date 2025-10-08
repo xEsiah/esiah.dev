@@ -13,7 +13,7 @@ require_once __DIR__ . '/../config/config.php';
     <title>Esiah's Corner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="<?= rtrim(BASE_URL, '/') ?>/images/icon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= rtrim(BASE_URL, '/') ?>/css/index.css">
 
 </head>
