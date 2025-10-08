@@ -1,16 +1,16 @@
-﻿<!-- /index.php (corrected for module order & MIME issues) -->
+﻿<!--index.php (corrected for module order & MIME issues) -->
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home | Esiah's Universe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/manag_access/image.php?file=icon.png" />
-    <link rel="stylesheet" href="/manag_access/style.php?files=global.css,index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/manag_access/image.php?file=icon.png">
+    <link rel="stylesheet" href="/manag_access/style.php?files=global.css,index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <!-- === Chargement Three.js, puis scripts === -->
     <script type="module">
         import('https://unpkg.com/three@0.160.0/build/three.module.js')
@@ -44,21 +44,21 @@
                 <h2>Latest Projects</h2>
                 <div class="work__grid">
                     <a class="card work-card" target="_blank" href="https://metzcampus.fr">
-                        <img alt="Metz Campus website" src="/manag_access/image.php?file=MC-preview.png" />
+                        <img alt="Metz Campus website" src="/manag_access/image.php?file=MC-preview.png">
                         <div class="work-card__body">
                             <h3>Metz Campus</h3>
                             <p>Website crafted for the Metz Campus organization during my first-year internship.</p>
                         </div>
                     </a>
                     <a class="card work-card" href="/Neo-Tokyo-Rush/">
-                        <img alt="Neo Tokyo Rush cover" src="/manag_access/image.php?file=N-T-R-LvlPre.png" />
+                        <img alt="Neo Tokyo Rush cover" src="/manag_access/image.php?file=N-T-R-LvlPre.png">
                         <div class="work-card__body">
                             <h3>Neo Tokyo Rush</h3>
                             <p>Fast-paced PvE action 2D game.</p>
                         </div>
                     </a>
                     <a class="card work-card" href="/projects/e1/">
-                        <img alt="1st Year Portfolio cover" src="/manag_access/image.php?file=Portfolio-preview.png" />
+                        <img alt="1st Year Portfolio cover" src="/manag_access/image.php?file=Portfolio-preview.png">
                         <div class="work-card__body">
                             <h3>First-Year Portfolio</h3>
                             <p>A curated journey through my early experiments and builds.</p>
