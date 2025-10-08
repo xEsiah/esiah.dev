@@ -2,13 +2,13 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Numerique - Portfolio Wordpress</title>
-  <link rel="icon" href="/projects/e1/images/icon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/projects/e1/styles/index.css" />
-  <link rel="stylesheet" href="/projects/e1/styles/pages_secondaires.css" />
+  <link rel="icon" href="/projects/e1/images/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/projects/e1/styles/index.css">
+  <link rel="stylesheet" href="/projects/e1/styles/pages_secondaires.css">
 </head>
 
 <body>
@@ -38,11 +38,11 @@
         </a>
 
         <a href="https://github.com/xEsiah" class="liens_footer" target="_blank">
-          <img src="/projects/e1/images/icon_github.png" alt="GitHub" class="icon" />
+          <img src="/projects/e1/images/icon_github.png" alt="GitHub" class="icon">
         </a>
 
         <a href="https://www.linkedin.com/in/xesiah/" class="liens_footer" target="_blank">
-          <img src="/projects/e1/images/icon_linkedin.png" alt="LinkedIn" class="icon" />
+          <img src="/projects/e1/images/icon_linkedin.png" alt="LinkedIn" class="icon">
         </a>
       </div>
     </div>

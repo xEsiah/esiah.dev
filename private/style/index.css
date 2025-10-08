@@ -21,8 +21,6 @@
 }
 
 .cinematic .panel .container {
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   padding: clamp(1rem, 3vw, 1.6rem);
 }
 
