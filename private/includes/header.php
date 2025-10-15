@@ -1,6 +1,7 @@
 <header class="nav">
   <div class="container inner">
-    <a href="/">
+    <a class="logo-title" href="/">
+      <img src="/manag_access/image.php?file=icon.png"></img>
       <div class="brand">Esiah's Universe</div>
     </a>
 
