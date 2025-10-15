@@ -148,3 +148,14 @@ window.EsiahScene = {
   lerp,
   clamp,
 };
+window.addEventListener("resize", () => {
+  // 1. Ajuste le rapport d’aspect de la caméra
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+
+  // 2. Redimensionne le rendu au nouveau viewport
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  // 3. (optionnel) Assure un bon rendu sur écrans haute densité
+  renderer.setPixelRatio(window.devicePixelRatio);
+});

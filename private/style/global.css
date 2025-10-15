@@ -115,9 +115,6 @@ a {
   text-decoration: none;
   transition: box-shadow 0.2s, color 0.2s;
 }
-a:hover {
-  box-shadow: 0 1px 0 0 var(--clr-accent-300) inset;
-}
 a:focus-visible {
   outline: 3px solid var(--clr-accent-300);
   outline-offset: 2px;
@@ -214,6 +211,8 @@ body,
 }
 .nav .links a:hover {
   background: color-mix(in oklab, var(--clr-text) 6%, transparent);
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 .nav .brand {
   font-weight: 700;
@@ -297,4 +296,29 @@ body,
   justify-content: center;
   text-align: center;
   min-height: 100vh;
+}
+.logo-title {
+  display: flex;
+  gap: 0.6rem;
+}
+.logo-title .brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-text);
+}
+.logo-title .brand:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+.logo-title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.logo-title img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+nav a:hover {
+  box-shadow: 0 1px 0 0 var(--clr-accent-300) inset;
 }
