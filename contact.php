@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/manag_access/style.php?file=global.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-
+    <script type="module" src="/private/scripts/main.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <section class="panel">
             <h1>Contact</h1>
             <p>You can reach me directly at:</p>
-            <a href="mailto:esiah.dev@gmail.com" class="btn">esiah.dev@gmail.com</a>
+            <a href="mailto:contact@esiah.dev" class="btn">contact@esiah.dev</a>
         </section>
     </main>
 

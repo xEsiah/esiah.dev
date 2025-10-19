@@ -1,4 +1,4 @@
-﻿<!--index.php (corrected for module order & MIME issues) -->
+<!-- /index.php (replace your current file) -->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,21 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home | Esiah's Universe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/manag_access/image.php?file=icon.jpg">
-    <link rel="stylesheet" href="/manag_access/style.php?files=global.css,index.css">
+
+    <link rel="icon" href="/manag_access/image.php?file=icon.png">
+    <link rel="stylesheet" href="/manag_access/style.php?file=global.css">
+    <link rel="stylesheet" href="/manag_access/style.php?file=index.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <!-- === Chargement Three.js, puis scripts === -->
-    <script type="module">
-        import('https://unpkg.com/three@0.160.0/build/three.module.js')
-            .then(THREE => {
-                window.THREE = THREE;
-                return import("/manag_access/script.php?file=space.js");
-            })
-            .then(() => {
-                return import("/manag_access/script.php?file=camera.js");
-            })
-    </script>
+    <script type="module" src="/private/scripts/main.js"></script>
 </head>
 
 <body class="cinematic">
@@ -50,7 +42,7 @@
                             <p>Website crafted for the Metz Campus organization during my first-year internship.</p>
                         </div>
                     </a>
-                    <a class="card work-card" href="/Neo-Tokyo-Rush/">
+                    <a class="card work-card" href="/Neo-Tokyo-Rush">
                         <img alt="Neo Tokyo Rush cover" src="/manag_access/image.php?file=N-T-R-LvlPre.png">
                         <div class="work-card__body">
                             <h3>Neo Tokyo Rush</h3>
@@ -73,8 +65,8 @@
                 <h2>All Projects</h2>
                 <p>Browse the full spectrum of my work — web, games, and UI/UX explorations.</p>
                 <div class="btn-group">
-                    <a class="btn" href="/projects/">See the full list</a>
                     <a class="btn outline" href="#panel-about">Who am I?</a>
+                    <a class="btn" href="/projects">See the full list</a>
                 </div>
             </div>
         </section>
@@ -84,8 +76,8 @@
                 <h2>About</h2>
                 <p>I’m Esiah — an explorer of code, design, and poetry, building immersive experiences.</p>
                 <div class="btn-group">
-                    <a class="btn" href="/about/">Learn more</a>
-                    <a class="btn outline" href="/contact/">Contact me</a>
+                    <a class="btn outline" href="#">Back to start</a>
+                    <a class="btn" href="/contact">Contact me</a>
                 </div>
             </div>
         </section>

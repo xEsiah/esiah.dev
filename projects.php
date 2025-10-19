@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/manag_access/style.php?file=projects.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-
+    <script type="module" src="/private/scripts/main.js"></script>
 </head>
 
 <body>
@@ -21,8 +21,8 @@
             <h1 class="title">Projects</h1>
             <p class="subtitle">Browse the different stages of my work.</p>
             <div class="btn-group">
-                <a class="btn" href="/about/">Learn about me</a>
-                <a class="btn outline" href="/contact/">Contact me</a>
+                <a class="btn" target="_blank" href="https://github.com/xEsiah">Learn about me</a>
+                <a class="btn outline" href="/contact.php">Contact me</a>
             </div>
         </section>
         <section class="panel container">
@@ -87,7 +87,7 @@
         <section class="panel">
             <div class="container">
                 <h2>Contact</h2>
-                <p>Reach me at <a href="mailto:esiah.dev@gmail.com">esiah.dev@gmail.com</a></p>
+                <p>Reach me at <a href="mailto:contact@esiah.dev">contact@esiah.dev</a></p>
             </div>
         </section>
     </main>

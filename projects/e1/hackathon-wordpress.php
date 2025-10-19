@@ -33,9 +33,9 @@
     <h2>Contact</h2>
     <div class="icons_liens">
       <div class="social-icons" style="display: flex; gap: 15px">
-        <a href="mailto:esiah.dev@gmail.com?subject=Demande%20d%27information&body=Bonjour%20Th%C3%A9o,"
-          class="liens_footer" target="_blank">
-          Contactez-moi
+        <a href="mailto:contact@esiah.dev?subject=Demande d'information&body=Bonjour Théo," class="liens_footer"
+          target="_blank">
+          <img src="/projects/e1/images/icon_mail.png" alt="Mail" class="icon" />
         </a>
 
         <a href="https://github.com/xEsiah" class="liens_footer" target="_blank">

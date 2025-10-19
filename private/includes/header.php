@@ -15,7 +15,6 @@
     <!-- Liens -->
     <nav id="site-links" class="links" role="navigation">
       <a href="/">Home</a>
-      <a href="/about/">About</a>
       <a href="/blog/">Blog</a>
       <a href="/projects/">Projects</a>
       <a href="/contact/">Contact</a>

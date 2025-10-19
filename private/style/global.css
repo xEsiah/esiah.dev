@@ -135,6 +135,12 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+body.ready {
+  opacity: 1;
 }
 main,
 header,
@@ -145,10 +151,7 @@ footer {
 main {
   min-height: 100dvh;
 }
-body {
-  background: url(/manag_access/image.php?file=background.jpg) no-repeat
-    center/cover fixed;
-}
+
 body::after {
   content: "";
   position: fixed;
@@ -295,7 +298,32 @@ body,
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 80vh;
+}
+.logo-title {
+  display: flex;
+  gap: 0.6rem;
+}
+.logo-title .brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-text);
+}
+.logo-title .brand:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+.logo-title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.logo-title img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+nav a:hover {
+  box-shadow: 0 1px 0 0 var(--clr-accent-300) inset;
 }
 .logo-title {
   display: flex;

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/manag_access/style.php?file=global.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-
+    <script type="module" src="/private/scripts/main.js"></script>
 </head>
 
 <body>
