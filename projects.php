@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Projects | Esiah's Universe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="icon" href="/manag_access/image.php?file=icon.jpg">
+    <link rel="icon" href="/manag_access/image.php?file=icon.jpg">
     <link rel="stylesheet" href="/manag_access/style.php?file=global.css">
     <link rel="stylesheet" href="/manag_access/style.php?file=projects.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
             <p class="subtitle">Browse the different stages of my work.</p>
             <div class="btn-group">
                 <a class="btn" target="_blank" href="https://github.com/xEsiah">Learn about me</a>
-                <a class="btn outline" href="/contact.php">Contact me</a>
+                <a class="btn outline" href="/contact">Contact me</a>
             </div>
         </section>
         <section class="panel container">
