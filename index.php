@@ -76,7 +76,7 @@
                 <h2>About</h2>
                 <p>I’m Esiah — an explorer of code, design, and poetry, building immersive experiences.</p>
                 <div class="btn-group">
-                    <a class="btn outline" href="#">Back to start</a>
+                    <a class="btn outline" href="">Back to start</a>
                     <a class="btn" href="/contact">Contact me</a>
                 </div>
             </div>
