@@ -9,7 +9,7 @@ const path = location.pathname;
 
 // --- Table de correspondance page → module
 const cameraModules = {
-  "": "/private/scripts/cameraIndex.js",
+  "/": "/private/scripts/cameraIndex.js",
   "/projects/": "/private/scripts/cameraProject.js",
   "/contact/": "/private/scripts/cameraContact.js",
   "/Echoes-of-the-Last-Stop/": "/private/scripts/cameraEotLS.js",
