@@ -9,11 +9,11 @@ const path = location.pathname;
 
 // --- Table de correspondance page → module
 const cameraModules = {
-  "/index.php": "/private/scripts/cameraIndex.js",
-  "/projects.php": "/private/scripts/cameraProject.js",
-  "/contact.php": "/private/scripts/cameraContact.js",
-  "/Echoes-of-the-Last-Stop.php": "/private/scripts/cameraEotLS.js",
-  "/Neo-Tokyo-Rush.php": "/private/scripts/cameraNTR.js",
+  "/index/": "/private/scripts/cameraIndex.js",
+  "/projects/": "/private/scripts/cameraProject.js",
+  "/contact/": "/private/scripts/cameraContact.js",
+  "/Echoes-of-the-Last-Stop/": "/private/scripts/cameraEotLS.js",
+  "/Neo-Tokyo-Rush/": "/private/scripts/cameraNTR.js",
 };
 
 // --- Recherche du module correspondant
