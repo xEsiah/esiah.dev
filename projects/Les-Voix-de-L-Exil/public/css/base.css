@@ -1,0 +1,47 @@
+/* Base et reset */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #555555;
+  color: #e0e0e0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Typographie globale */
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+h2,
+h3 {
+  font-size: 2em;
+}

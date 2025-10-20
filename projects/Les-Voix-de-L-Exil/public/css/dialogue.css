@@ -1,0 +1,38 @@
+.dialogues {
+  display: none;
+  position: relative;
+  animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+.dialogue-left,
+.dialogue-right {
+  font-size: 1.5rem;
+  padding: 16px 24px;
+  margin-bottom: 5%;
+  background-color: #1b1b1bb6;
+  color: #f0f0f0;
+  border: 2px solid #8b0d26;
+  box-shadow: 0 0 15px rgba(139, 13, 38, 0.6);
+  border-radius: 12px;
+  pointer-events: auto;
+  display: inline-block;
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.2px;
+  z-index: 3;
+}
+
+.dialogue-left {
+  max-width: 35%;
+  text-align: left;
+  margin-left: 25%;
+  margin-right: auto;
+  border-radius: 12px 12px 12px 0;
+}
+
+.dialogue-right {
+  max-width: 35%;
+  text-align: right;
+  margin-right: 25%;
+  margin-left: auto;
+  border-radius: 12px 12px 0 12px;
+}

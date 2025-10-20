@@ -1,0 +1,45 @@
+.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+}
+.invisible-init {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+.sprite.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+}
+.cta-button-dialogue.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+}
+.hidden {
+  display: none;
+}
+.reveal {
+  display: flex;
+}
+#choice-form.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* Animation de "shake" pour les cris */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

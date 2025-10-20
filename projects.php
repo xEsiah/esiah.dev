@@ -58,6 +58,10 @@
                             </a>
                         </div>
                         <div class=" projects-tab-panel" id="projects-panel-per">
+                            <a class=" projects-card" href="/projects/Les-Voix-de-L-Exil/public/index.php">
+                                <h3>Les Voix de l'Exil</h3>
+                                <p>League lore-inspired multiple-choice game</p>
+                            </a>
                             <a class="projects-card" href="/Neo-Tokyo-Rush/">
                                 <h3>Neo Tokyo Rush</h3>
                                 <p>Cyberpunk-inspired beat ’em All game</p>
@@ -65,10 +69,6 @@
                             <a class="projects-card" href="/Echoes-of-the-Last-Stop/">
                                 <h3>Echoes of the Last Stop</h3>
                                 <p>Psychological horror game project with my partner.</p>
-                            </a>
-                            <a class=" projects-card" href="/projects/">
-                                <h3>Building...</h3>
-                                <p>Work in progress...</p>
                             </a>
                             <a class=" projects-card" href="/projects/">
                                 <h3>Building...</h3>

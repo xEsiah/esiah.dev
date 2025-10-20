@@ -1,0 +1,46 @@
+/* Header et footer */
+header,
+footer {
+  background-color: #1a1a1d;
+  color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  border-color: #c3073f;
+  border-style: solid;
+}
+
+header {
+  padding: 20px;
+  border-width: 0 0 2px 0;
+}
+
+footer {
+  padding: 15px;
+  border-width: 2px 0 0 0;
+  font-size: 0.9em;
+  position: relative;
+  z-index: 100;
+}
+footer a {
+  color: #c3073f;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5em;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #f0f0f0;
+  text-decoration: underline;
+  outline: none;
+}
+
+.page-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10vh;
+}

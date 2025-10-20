@@ -1,0 +1,44 @@
+[class^="background-"] {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+[class^="background-"]::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.26);
+  z-index: 0;
+}
+
+/* Images spécifiques */
+.background-introduction {
+  background-image: url("../images/viewSwainWatching.jpg");
+}
+
+.background-chapter0 {
+  background-image: url("../images/viewNoxusInterArene.jpg");
+}
+
+.background-chapter1 {
+  background-image: url("../images/viewImmortalBastionFromInside.jpg");
+}
+
+.background-chapter2 {
+  background-image: url("../images/viewRandomNoxusGate.jpg");
+}
+
+.background-chapter3 {
+  background-image: url("../images/viewZaunDownSideFocused.jpg");
+}
+
+.background-chapter4 {
+  background-image: url("../images/viewPiltoverDownSide.jpeg");
+}
