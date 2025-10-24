@@ -1,4 +1,3 @@
-<!-- /index.php (replace your current file) -->
 <!DOCTYPE html>
 <html lang="fr">
 
